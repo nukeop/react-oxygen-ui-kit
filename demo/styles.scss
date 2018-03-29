@@ -1,0 +1,23 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body>div {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+
+  width: 100%;
+  height: 100%;
+}
+
+section{
+  position: relative;
+  flex: 1 1 auto;
+  width: 100%;
+  height: 30rem;
+}
