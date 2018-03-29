@@ -11,12 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nukeop/react-ui-kit.git"
+    "url": "git+https://github.com/nukeop/react-oxygen-ui-kit.git"
   },
   "keywords": [
-    "boilerplate",
-    "npm",
-    "react"
+    "react",
+    "ui",
+    "ui kit",
+    "flat",
+    "modern"
   ],
   "author": "nukeop",
   "license": "MIT",
