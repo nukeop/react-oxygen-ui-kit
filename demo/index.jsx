@@ -6,8 +6,10 @@ import './styles.scss';
 
 import {
   Background,
+  Headline,
   Panel,
-  PanelHeader
+  PanelHeader,
+  Paragraph
 } from '../src';
 
 const render = Component => {
@@ -27,6 +29,16 @@ const demo = () => {
         <Background
           image='https://i.imgur.com/KTKjdBU.jpg'
         />
+
+        <div style={{flexFlow: 'column', width: '100%', padding: '5rem 0'}}>
+          <Headline>
+            React UI Kit
+          </Headline>
+          <Paragraph>
+            A set of reusable UI components built with React and designed to be easy to integrate with any website.
+          </Paragraph>
+        </div>
+
       </section>
 
       <section>

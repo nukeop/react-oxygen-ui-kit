@@ -1,0 +1,15 @@
+@import '../common.scss';
+
+.oxygen.headline {
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 3rem;
+  font-weight: normal;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: rgba($clouds, 0.89);
+}
