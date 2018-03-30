@@ -4,7 +4,11 @@ import { AppContainer } from 'react-hot-loader';
 
 import './styles.scss';
 
-import Background from '../src/Background';
+import {
+  Background,
+  Panel,
+  PanelHeader
+} from '../src';
 
 const render = Component => {
   ReactDOM.render(
@@ -26,14 +30,18 @@ const demo = () => {
       </section>
 
       <section>
-
+        <Panel style={{width: '15rem', height: '20rem'}}>
+          <PanelHeader>
+            Panel Title
+          </PanelHeader>
+        </Panel>
       </section>
 
       <section>
         <Background
           image='https://i.imgur.com/QLkTuOa.jpg'
-          color1='#380036'
-          color2='#0CBABA'
+          color1='#42378f'
+          color2='#f53844'
         />
       </section>
 

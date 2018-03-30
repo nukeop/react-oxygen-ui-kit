@@ -18,10 +18,8 @@ class Background extends React.Component {
     ? {background: `linear-gradient(135deg, ${color1} 10%, ${color2} 100%)`}
     : null;
 
-    console.log(overlayStyle);
-
     return (
-      <div className='background'>
+      <div className='oxygen background'>
         <div className='bg-image' style={{backgroundImage: `url(${image})`}}></div>
         <div className='bg-overlay' style={overlayStyle}></div>
         {this.props.children}
