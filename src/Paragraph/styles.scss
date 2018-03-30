@@ -1,0 +1,13 @@
+@import '../common.scss';
+
+.oxygen.paragraph {
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+  color: rgba($clouds, 0.89);
+}
