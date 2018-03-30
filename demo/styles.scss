@@ -16,8 +16,11 @@ body>div {
 }
 
 section{
+  display: flex;
+  flex-flow: row;
   position: relative;
   flex: 1 1 auto;
   width: 100%;
-  height: 30rem;
+  padding: 1rem;
+  box-sizing: border-box;
 }

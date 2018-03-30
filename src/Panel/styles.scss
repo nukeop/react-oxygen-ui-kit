@@ -1,0 +1,9 @@
+@import '../common.scss';
+
+.oxygen.panel {
+  background: #ecf0f1;
+  position: relative;
+  overflow: hidden;
+  @include borderRadius;
+  @include shadow1;
+}
