@@ -1,6 +1,7 @@
 import Background from './Background';
 import Button from './Button';
 import Headline from './Headline';
+import Input from './Input';
 import Panel from './Panel';
 import PanelBody from './PanelBody';
 import PanelFooter from './PanelFooter';
@@ -11,6 +12,7 @@ module.exports = {
   Background,
   Button,
   Headline,
+  Input,
   Panel,
   PanelBody,
   PanelFooter,

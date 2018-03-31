@@ -17,13 +17,16 @@ const Button = props => {
           {'orange': props.orange},
           {'dark-orange': props.darkOrange},
           {'red': props.red},
-          {'fluid': props.fluid}
+          {'fluid': props.fluid},
+          {'attachLeft': props.attach === 'left'},
+          {'attachRight': props.attach === 'right'},
+          {'attachMid': props.attach === 'mid'},
         )
       }
-    >
-      {props.children}
-    </button>
-  );
-}
+      >
+        {props.children}
+      </button>
+    );
+  }
 
-export default Button;
+  export default Button;

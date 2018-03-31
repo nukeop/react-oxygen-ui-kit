@@ -36,6 +36,22 @@
   border-radius: 0.25rem;
 }
 
+@mixin borderRadiusLeft {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+@mixin borderRadiusRight {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+@mixin borderRadiusMid {
+  border-radius: 0;
+}
+
+@mixin transition {
+  transition: 0.25s;
+}
+
 $turquoise: #1abc9c;
 $greensea: #16a085;
 

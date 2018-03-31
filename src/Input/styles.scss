@@ -1,0 +1,27 @@
+@import '../common.scss';
+
+.oxygen.input {
+  background: $clouds;
+  border: none;
+  outline: 0;
+  padding: 0.75em 1em;
+  margin: 0 0.25em 0 0;
+  min-height: 1em;
+
+  @include borderRadius;
+  @include transition;
+
+  &.attachLeft {
+    @include borderRadiusLeft;
+    margin: 0;
+  }
+
+  &.attachRight {
+    @include borderRadiusRight;
+  }
+
+  &.attachMid {
+    @include borderRadiusMid;
+    margin: 0;
+  }
+}
