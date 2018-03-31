@@ -2,12 +2,12 @@ import React from 'react';
 
 import styles from './styles.scss';
 
-const Panel = props => {
+const PanelBody = props => {
   return (
-    <div style={props.style} className="oxygen panel">
+    <div className="oxygen panel-body">
       {props.children}
     </div>
   );
 }
 
-export default Panel;
+export default PanelBody;

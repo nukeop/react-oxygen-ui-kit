@@ -10,4 +10,8 @@
   font-weight: lighter;
   margin-bottom: 1rem;
   color: rgba($clouds, 0.89);
+
+  &.inverted {
+    color: rgba($midnight, 0.89);
+  }
 }

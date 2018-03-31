@@ -1,0 +1,8 @@
+@import '../common.scss';
+
+.oxygen.panel-footer {
+  background: $clouds;
+  border-top: 1px solid rgba($silver, 0.5);
+  padding: 1rem;
+  color: rgba($midnight, 0.89);
+}
