@@ -44,7 +44,7 @@ const demo = () => {
       </section>
 
       <section>
-        <Panel style={{width: '15rem', height: '20rem'}}>
+        <Panel>
           <PanelHeader>
             Panel Title
           </PanelHeader>
