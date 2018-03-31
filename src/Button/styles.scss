@@ -17,6 +17,7 @@
   font-weight: bold;
 
   @include borderRadius;
+  @include transition;
 
   &:hover,
   &:focus {
@@ -61,5 +62,19 @@
 
   &.fluid {
     width: 100%;
+  }
+
+  &.attachLeft {
+    @include borderRadiusLeft;
+    margin: 0;
+  }
+
+  &.attachRight {
+    @include borderRadiusRight;
+  }
+
+  &.attachMid {
+    @include borderRadiusMid;
+    margin: 0;
   }
 }

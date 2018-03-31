@@ -8,6 +8,7 @@ import {
   Background,
   Button,
   Headline,
+  Input,
   Panel,
   PanelBody,
   PanelFooter,
@@ -33,7 +34,7 @@ const demo = () => {
           image='https://i.imgur.com/KTKjdBU.jpg'
         />
 
-        <div style={{flexFlow: 'column', width: '100%', padding: '5rem 0'}}>
+        <div style={{flexFlow: 'column', width: '100%', padding: '10rem 0'}}>
           <Headline>
             React UI Kit
           </Headline>
@@ -45,14 +46,18 @@ const demo = () => {
       </section>
 
       <section>
-        <Panel>
-          <PanelHeader>
-            Panel Title
-          </PanelHeader>
-          <PanelBody>
-            <Paragraph inverted>You have some nerve thinking you can use my graphics</Paragraph>
-          </PanelBody>
-          <PanelFooter>derp</PanelFooter>
+        <Panel style={{padding: '10rem 0'}} fluid>
+          <Background
+            image='https://i.imgur.com/pq5NYk0.jpg'
+            color1='#0575e6'
+            color2='#00f260'
+            centered
+          />
+          <Headline>
+            Panel with a background
+          </Headline>
+          <Paragraph>And a couple of paragraphs of text</Paragraph>
+          <Paragraph>All UI elements can be combined</Paragraph>
         </Panel>
       </section>
 
@@ -66,14 +71,16 @@ const demo = () => {
         <Button orange>Click here</Button>
         <Button darkOrange>Click here</Button>
         <Button red>Click here</Button>
+
       </section>
 
-      <section>
-        <Background
-          image='https://i.imgur.com/QLkTuOa.jpg'
-          color1='#42378f'
-          color2='#f53844'
-        />
+      <section style={{padding: '1rem'}}>
+        <Button attach='left' green>Yes</Button>
+        <Button attach='mid' blue>Maybe</Button>
+        <Button attach='right' red>No</Button>
+        <Input />
+        <Button orange attach='left'>Submit</Button>
+        <Input />
       </section>
 
     </div>
