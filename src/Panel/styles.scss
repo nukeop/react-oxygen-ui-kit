@@ -1,9 +1,14 @@
 @import '../common.scss';
 
 .oxygen.panel {
-  background: #ecf0f1;
   position: relative;
+
+  display: flex;
   overflow: hidden;
+  flex-flow:column;
+
+  background: #ecf0f1;
+
   @include borderRadius;
   @include shadow1;
 }

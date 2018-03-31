@@ -8,6 +8,8 @@ import {
   Background,
   Headline,
   Panel,
+  PanelBody,
+  PanelFooter,
   PanelHeader,
   Paragraph
 } from '../src';
@@ -46,6 +48,10 @@ const demo = () => {
           <PanelHeader>
             Panel Title
           </PanelHeader>
+          <PanelBody>
+            <Paragraph inverted>You have some nerve thinking you can use my graphics</Paragraph>
+          </PanelBody>
+          <PanelFooter>derp</PanelFooter>
         </Panel>
       </section>
 
