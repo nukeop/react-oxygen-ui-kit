@@ -1,0 +1,65 @@
+@import '../common.scss';
+
+.oxygen.button {
+  min-height: 1em;
+  margin: 0 0.25em 0 0;
+  padding: 0.75em 1.5em 0.75em;
+
+  cursor: pointer;
+  transition: 0.25s;
+
+  color: rgba($midnight, 0.89);
+  border: none;
+  outline: 0;
+  background: rgba($silver, 0.59);
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  @include borderRadius;
+
+  &:hover,
+  &:focus {
+    background: rgba($silver, 0.69);
+  }
+
+  &:active {
+    background: rgba($silver, 0.89);
+  }
+
+  &.teal {
+    @include button-color($turquoise, $greensea, $clouds);
+  }
+
+  &.green {
+    @include button-color($emerald, $nephritis, $clouds);
+  }
+
+  &.blue {
+    @include button-color($river, $blue, $clouds);
+  }
+
+  &.purple {
+    @include button-color($amethyst, $wisteria, $clouds);
+  }
+
+  &.black {
+    @include button-color($asphalt, $midnight, $clouds);
+  }
+
+  &.orange {
+    @include button-color($sunflower, $orange, $clouds);
+  }
+
+  &.dark-orange {
+    @include button-color($carrot, $pumpkin, $clouds);
+  }
+
+  &.red {
+    @include button-color($red, $darkred, $clouds);
+  }
+
+  &.fluid {
+    width: 100%;
+  }
+}

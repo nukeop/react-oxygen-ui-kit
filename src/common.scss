@@ -18,8 +18,22 @@
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
+@mixin button-color($bg, $bg2, $fg) {
+  color: $fg;
+  background: $bg;
+
+  &:hover,
+  &:focus {
+    background: rgba($bg2, 0.89);
+  }
+
+  &:active {
+    background: $bg2;
+  }
+}
+
 @mixin borderRadius {
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
 }
 
 $turquoise: #1abc9c;
