@@ -6,6 +6,7 @@ import './styles.scss';
 
 import {
   Background,
+  Button,
   Headline,
   Panel,
   PanelBody,
@@ -53,6 +54,18 @@ const demo = () => {
           </PanelBody>
           <PanelFooter>derp</PanelFooter>
         </Panel>
+      </section>
+
+      <section style={{padding: '1rem'}}>
+        <Button>Click here</Button>
+        <Button teal>Click here</Button>
+        <Button green>Click here</Button>
+        <Button blue>Click here</Button>
+        <Button purple>Click here</Button>
+        <Button black>Click here</Button>
+        <Button orange>Click here</Button>
+        <Button darkOrange>Click here</Button>
+        <Button red>Click here</Button>
       </section>
 
       <section>
