@@ -2,14 +2,20 @@
 
 .oxygen.headline {
   position: relative;
+
   display: flex;
+  align-items: center;
   flex-flow: row;
   justify-content: center;
-  align-items: center;
+
   width: 100%;
-  font-size: 3rem;
-  font-weight: normal;
   margin-top: 3rem;
   margin-bottom: 1rem;
+
+  text-align: center;
+
   color: rgba($clouds, 0.89);
+
+  font-size: 3rem;
+  font-weight: normal;
 }

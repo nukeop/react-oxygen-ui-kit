@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 
 import styles from './styles.scss';
 
@@ -15,7 +16,9 @@ class Background extends React.Component {
       color2,
       centered,
       noGradient,
-      colored
+      colored,
+      className,
+      style
     } = this.props;
 
     let bgImageStyle = {};
@@ -30,7 +33,15 @@ class Background extends React.Component {
     noGradient ? overlayStyle.background = 'transparent' : null;
 
     return (
-      <div className='oxygen background'>
+      <div
+        className={
+          classnames(
+            'oxygen background',
+            className
+        )
+       }
+       style={style}
+      >
         <div className='bg-image' style={bgImageStyle}></div>
         <div className='bg-overlay' style={overlayStyle}></div>
         {this.props.children}
@@ -45,7 +56,9 @@ Background.propTypes = {
   color2: PropTypes.string,
   centered: PropTypes.bool,
   noGradient: PropTypes.bool,
-  colored: PropTypes.bool
+  colored: PropTypes.bool,
+  className: PropTypes.string,
+  style: PropTypes.object
 };
 
 export default Background;

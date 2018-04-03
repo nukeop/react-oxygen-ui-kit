@@ -7,7 +7,13 @@ import styles from './styles.scss';
 const PanelBody = props => {
   return (
     <div
-      className={classnames("oxygen panel-body", {"row": props.row})}
+      className={
+        classnames(
+          "oxygen panel-body",
+          {"row": props.row}
+        )
+      }
+      style={props.style}
     >
       {props.children}
     </div>
@@ -15,7 +21,9 @@ const PanelBody = props => {
 }
 
 PanelBody.propTypes = {
-  row: PropTypes.bool
+  row: PropTypes.bool,
+  className: PropTypes.string,
+  style: PropTypes.object
 };
 
 export default PanelBody;

@@ -2,16 +2,23 @@
 
 .oxygen.paragraph {
   position: relative;
+
   display: flex;
+  align-items: center;
   flex-flow: row;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  font-weight: lighter;
+
   margin-bottom: 1rem;
+
   color: rgba($clouds, 0.89);
+
+  font-weight: lighter;
 
   &.inverted {
     color: rgba($midnight, 0.89);
+  }
+
+  &.fluid {
+    width: 100%;
   }
 }
