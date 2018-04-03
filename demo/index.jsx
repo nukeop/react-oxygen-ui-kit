@@ -61,28 +61,59 @@ const demo = () => {
         </Panel>
       </section>
 
-      <section style={{padding: '1rem'}}>
-        <Button>Click here</Button>
-        <Button teal>Click here</Button>
-        <Button green>Click here</Button>
-        <Button blue>Click here</Button>
-        <Button purple>Click here</Button>
-        <Button black>Click here</Button>
-        <Button orange>Click here</Button>
-        <Button darkOrange>Click here</Button>
-        <Button red>Click here</Button>
+      <section>
+        <Panel fluid>
+          <PanelHeader>
+            Panels - examples
+          </PanelHeader>
+          <PanelBody>
+
+            <Panel>
+              <PanelHeader>Panel header</PanelHeader>
+              <PanelBody>Panel body</PanelBody>
+              <PanelFooter>Panel footer</PanelFooter>
+            </Panel>
+
+          </PanelBody>
+        </Panel>
 
       </section>
 
-      <section style={{padding: '1rem'}}>
-        <Button attach='left' green>Yes</Button>
-        <Button attach='mid' blue>Maybe</Button>
-        <Button attach='right' red>No</Button>
-        <Input />
-        <Button orange attach='left'>Submit</Button>
-        <Input />
+      <section>
+        <Panel fluid>
+          <PanelHeader>
+            Buttons - examples
+          </PanelHeader>
+          <PanelBody row>
+            <Button>Click here</Button>
+            <Button teal>Click here</Button>
+            <Button green>Click here</Button>
+            <Button blue>Click here</Button>
+            <Button purple>Click here</Button>
+            <Button black>Click here</Button>
+            <Button orange>Click here</Button>
+            <Button darkOrange>Click here</Button>
+            <Button red>Click here</Button>
+          </PanelBody>
+        </Panel>
       </section>
 
+      <section>
+        <Panel fluid>
+          <PanelHeader>
+            Buttons and inputs - advanced examples
+          </PanelHeader>
+          <PanelBody row>
+            <Button attach='left' green>Yes</Button>
+            <Button attach='mid' blue>Maybe</Button>
+            <Button attach='right' red>No</Button>
+            <Input border />
+            <Button orange attach='left'>Submit</Button>
+            <Input border attach='right'/>
+          </PanelBody>
+        </Panel>
+
+      </section>
     </div>
   );
 };

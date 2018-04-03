@@ -14,14 +14,30 @@
   &.attachLeft {
     @include borderRadiusLeft;
     margin: 0;
+
+    &.border {
+      @include standardBorderAttachLeft;
+    }
   }
 
   &.attachRight {
     @include borderRadiusRight;
+
+    &.border {
+      @include standardBorderAttachRight;
+    }
   }
 
   &.attachMid {
     @include borderRadiusMid;
     margin: 0;
+
+    &.border {
+      @include standardBorderAttachMid;
+    }
+  }
+
+  &.border {
+    @include standardBorder;
   }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 import styles from './styles.scss';
@@ -20,13 +21,26 @@ const Button = props => {
           {'fluid': props.fluid},
           {'attachLeft': props.attach === 'left'},
           {'attachRight': props.attach === 'right'},
-          {'attachMid': props.attach === 'mid'},
+          {'attachMid': props.attach === 'mid'}
         )
       }
-      >
-        {props.children}
-      </button>
-    );
-  }
+    >
+      {props.children}
+    </button>
+  );
+}
 
-  export default Button;
+Button.propTypes = {
+  teal: PropTypes.bool,
+  green: PropTypes.bool,
+  blue: PropTypes.bool,
+  purple: PropTypes.bool,
+  black: PropTypes.bool,
+  orange: PropTypes.bool,
+  darkOrange: PropTypes.bool,
+  red: PropTypes.bool,
+  fluid: PropTypes.bool,
+  attach: PropTypes.string
+};
+
+export default Button;

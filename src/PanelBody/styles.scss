@@ -7,4 +7,9 @@
   flex: 1 1 auto;
   padding: 1rem;
   background: $clouds;
+  color: rgba($midnight, 0.89);
+
+  &.row {
+    flex-flow: row;
+  }
 }
