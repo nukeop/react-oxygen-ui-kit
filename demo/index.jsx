@@ -9,6 +9,7 @@ import {
   Button,
   Headline,
   Input,
+  Loader,
   Panel,
   PanelBody,
   PanelFooter,
@@ -72,7 +73,7 @@ const demo = () => {
 
             <Panel>
               <PanelHeader>Panel header</PanelHeader>
-              <PanelBody>Standard panel body which can contain any text</PanelBody>
+              <PanelBody style={{paddingBottom: '8rem'}}>Standard panel body which can contain any text</PanelBody>
               <PanelFooter>Panel footer</PanelFooter>
             </Panel>
 
@@ -148,6 +149,15 @@ const demo = () => {
           </PanelBody>
         </Panel>
 
+      </section>
+
+      <section>
+        <Panel fluid>
+          <PanelBody row>
+            <Loader type="loader1"/>
+            <Loader type="loader2"/>
+          </PanelBody>
+        </Panel>
       </section>
     </div>
   );
