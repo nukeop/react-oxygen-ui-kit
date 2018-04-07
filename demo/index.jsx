@@ -153,9 +153,14 @@ const demo = () => {
 
       <section>
         <Panel fluid>
+          <PanelHeader>
+            Loaders
+          </PanelHeader>
           <PanelBody row>
             <Loader type="loader1"/>
             <Loader type="loader2"/>
+            <Loader type="loader3"/>
+            <Loader type="loader4"/>
           </PanelBody>
         </Panel>
       </section>
