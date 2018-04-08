@@ -51,14 +51,16 @@ $asbestos: #7f8c8d;
 @mixin button-color($bg, $bg2, $fg) {
   color: $fg;
   background: $bg;
+  box-shadow: 0 3px 0 $bg2;
 
   &:hover,
   &:focus {
-    background: rgba($bg2, 0.89);
   }
 
   &:active {
-    background: $bg2;
+    margin-top: 3px;
+    margin-bottom: -3px;
+    box-shadow: none;
   }
 }
 
