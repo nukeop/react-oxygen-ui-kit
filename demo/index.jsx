@@ -10,6 +10,7 @@ import {
   Headline,
   Input,
   Loader,
+  Menu,
   Panel,
   PanelBody,
   PanelFooter,
@@ -166,6 +167,26 @@ const demo = () => {
           </PanelBody>
         </Panel>
       </section>
+
+      <section>
+        <Panel fluid>
+          <PanelHeader>
+            Menu
+          </PanelHeader>
+          <PanelBody>
+            <Menu small>
+
+            </Menu>
+            <Menu>
+
+            </Menu>
+            <Menu big>
+
+            </Menu>
+          </PanelBody>
+        </Panel>
+      </section>
+
     </div>
   );
 };

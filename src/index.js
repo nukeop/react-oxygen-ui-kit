@@ -3,6 +3,7 @@ import Button from './Button';
 import Headline from './Headline';
 import Input from './Input';
 import Loader from './Loader';
+import Menu from './Menu';
 import Panel from './Panel';
 import PanelBody from './PanelBody';
 import PanelFooter from './PanelFooter';
@@ -15,6 +16,7 @@ module.exports = {
   Headline,
   Input,
   Loader,
+  Menu,
   Panel,
   PanelBody,
   PanelFooter,
