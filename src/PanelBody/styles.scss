@@ -10,6 +10,6 @@
   color: rgba($midnight, 0.89);
 
   &.row {
-    flex-flow: row;
+    flex-flow: row wrap;
   }
 }

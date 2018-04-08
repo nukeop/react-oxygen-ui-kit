@@ -161,6 +161,8 @@ const demo = () => {
             <Loader type="loader2"/>
             <Loader type="loader3"/>
             <Loader type="loader4"/>
+            <Loader type="loader5"/>
+            <Loader type="loader6"/>
           </PanelBody>
         </Panel>
       </section>
