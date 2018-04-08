@@ -11,7 +11,8 @@
   color: rgba($midnight, 0.89);
   border: none;
   outline: 0;
-  background: rgba($silver, 0.59);
+  background: lighten($silver, 7.5%);
+  box-shadow: 0 3px 0 darken($silver, 7.5%);
 
   font-size: 1rem;
   font-weight: bold;
@@ -21,11 +22,12 @@
 
   &:hover,
   &:focus {
-    background: rgba($silver, 0.69);
   }
 
   &:active {
-    background: rgba($silver, 0.89);
+    margin-top: 3px;
+    margin-bottom: -3px;
+    box-shadow: none;
   }
 
   &.teal {
