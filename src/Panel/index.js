@@ -11,7 +11,8 @@ const Panel = props => {
       className={
         classnames(
           "oxygen panel",
-          {"fluid": props.fluid}
+          {"fluid": props.fluid},
+          props.className
         )
       }
     >

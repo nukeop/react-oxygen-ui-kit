@@ -1,0 +1,13 @@
+@import '../common.scss';
+
+.menu {
+  min-height: 3rem;
+
+  &.small {
+    min-height: 2rem;
+  }
+
+  &.big {
+    min-height: 5rem;
+  }
+}
