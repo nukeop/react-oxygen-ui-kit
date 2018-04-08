@@ -6,9 +6,9 @@
   display: flex;
   overflow: hidden;
   flex-flow:column;
-margin: 1rem;
+  margin: 1rem;
 
-  background: #ecf0f1;
+  background: $clouds;
 
   @include borderRadius;
   @include shadow1;
