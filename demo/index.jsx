@@ -11,6 +11,8 @@ import {
   Input,
   Loader,
   Menu,
+  MenuItem,
+  MenuSeparator,
   Panel,
   PanelBody,
   PanelFooter,
@@ -81,120 +83,138 @@ const demo = () => {
             <Panel>
               <PanelHeader>Panel with a background</PanelHeader>
               <PanelBody
-              >
-                <Background
-                  image='https://i.imgur.com/hSimrrl.jpg'
-                  centered
-                  colored
-                  noGradient
-                />
-                <Paragraph>
-                  And some text for good measure
-                </Paragraph>
-              </PanelBody>
-              <PanelFooter>Another footer</PanelFooter>
-            </Panel>
+                >
+                  <Background
+                    image='https://i.imgur.com/hSimrrl.jpg'
+                    centered
+                    colored
+                    noGradient
+                  />
+                  <Paragraph>
+                    And some text for good measure
+                  </Paragraph>
+                </PanelBody>
+                <PanelFooter>Another footer</PanelFooter>
+              </Panel>
 
-            <Panel
-              style={{width: '19.6rem', height: 'auto'}}
-            >
-              <Background
-                image='https://i.imgur.com/PxJNP62.jpg'
-                centered
-                colored
-                noGradient
-              />
-              <Paragraph
-                style={{background: '#2c3e5099', zIndex: 10, margin: '1rem', padding: '1rem', borderRadius: '0.25rem'}}
-              >
-                This panel has no header, footer, or body, but it has a background and some text
-              </Paragraph>
-            </Panel>
+              <Panel
+                style={{width: '19.6rem', height: 'auto'}}
+                >
+                  <Background
+                    image='https://i.imgur.com/PxJNP62.jpg'
+                    centered
+                    colored
+                    noGradient
+                  />
+                  <Paragraph
+                    style={{background: '#2c3e5099', zIndex: 10, margin: '1rem', padding: '1rem', borderRadius: '0.25rem'}}
+                    >
+                      This panel has no header, footer, or body, but it has a background and some text
+                    </Paragraph>
+                  </Panel>
 
-          </PanelBody>
-        </Panel>
+                </PanelBody>
+              </Panel>
 
-      </section>
+            </section>
 
-      <section>
-        <Panel fluid>
-          <PanelHeader>
-            Buttons - examples
-          </PanelHeader>
-          <PanelBody row>
-            <Button>Click here</Button>
-            <Button teal>Click here</Button>
-            <Button green>Click here</Button>
-            <Button blue>Click here</Button>
-            <Button purple>Click here</Button>
-            <Button black>Click here</Button>
-            <Button orange>Click here</Button>
-            <Button darkOrange>Click here</Button>
-            <Button red>Click here</Button>
-          </PanelBody>
-        </Panel>
-      </section>
+            <section>
+              <Panel fluid>
+                <PanelHeader>
+                  Buttons - examples
+                </PanelHeader>
+                <PanelBody row>
+                  <Button>Click here</Button>
+                  <Button teal>Click here</Button>
+                  <Button green>Click here</Button>
+                  <Button blue>Click here</Button>
+                  <Button purple>Click here</Button>
+                  <Button black>Click here</Button>
+                  <Button orange>Click here</Button>
+                  <Button darkOrange>Click here</Button>
+                  <Button red>Click here</Button>
+                </PanelBody>
+              </Panel>
+            </section>
 
-      <section>
-        <Panel fluid>
-          <PanelHeader>
-            Buttons and inputs - advanced examples
-          </PanelHeader>
-          <PanelBody row>
-            <Button attach='left' green>Yes</Button>
-            <Button attach='mid' blue>Maybe</Button>
-            <Button attach='right' red>No</Button>
-            <Input border />
-            <Button orange attach='left'>Submit</Button>
-            <Input border attach='right'/>
-          </PanelBody>
-        </Panel>
+            <section>
+              <Panel fluid>
+                <PanelHeader>
+                  Buttons and inputs - advanced examples
+                </PanelHeader>
+                <PanelBody row>
+                  <Button attach='left' green>Yes</Button>
+                  <Button attach='mid' blue>Maybe</Button>
+                  <Button attach='right' red>No</Button>
+                  <Input border />
+                  <Button orange attach='left'>Submit</Button>
+                  <Input border attach='right'/>
+                </PanelBody>
+              </Panel>
 
-      </section>
+            </section>
 
-      <section>
-        <Panel fluid>
-          <PanelHeader>
-            Loaders
-          </PanelHeader>
-          <PanelBody row>
-            <Loader type="loader1"/>
-            <Loader type="loader2"/>
-            <Loader type="loader3"/>
-            <Loader type="loader4"/>
-            <Loader type="loader5"/>
-            <Loader type="loader6"/>
-          </PanelBody>
-        </Panel>
-      </section>
+            <section>
+              <Panel fluid>
+                <PanelHeader>
+                  Loaders
+                </PanelHeader>
+                <PanelBody row>
+                  <Loader type="loader1"/>
+                  <Loader type="loader2"/>
+                  <Loader type="loader3"/>
+                  <Loader type="loader4"/>
+                  <Loader type="loader5"/>
+                  <Loader type="loader6"/>
+                </PanelBody>
+              </Panel>
+            </section>
 
-      <section>
-        <Panel fluid>
-          <PanelHeader>
-            Menu
-          </PanelHeader>
-          <PanelBody>
-            <Menu small>
+            <section>
+              <Panel fluid>
+                <PanelHeader>
+                  Menu
+                </PanelHeader>
+                <PanelBody>
+                  <Menu small>
 
-            </Menu>
-            <Menu>
+                  </Menu>
+                  <Menu>
+                    <MenuItem>
+                      Home
+                    </MenuItem>
+                    <MenuSeparator />
+                    <MenuItem>
+                      Gallery
+                    </MenuItem>
+                    <MenuSeparator />
+                    <MenuItem>
+                      <img style={{height: '40px', width: 'auto'}} src="https://wikileaks.org/IMG/rubon32.png"/>
+                    </MenuItem>
+                    <MenuSeparator />
+                    <MenuItem>
+                      Forums
+                    </MenuItem>
+                    <MenuSeparator />
+                    <MenuItem>
+                      Contact
+                    </MenuItem>
+                  </Menu>
+                  <Menu big>
 
-            </Menu>
-            <Menu big>
+                  </Menu>
+                </PanelBody>
+              </Panel>
+            </section>
 
-            </Menu>
-          </PanelBody>
-        </Panel>
-      </section>
+          </div>
+        );
+      };
 
-    </div>
-  );
-};
+      render(demo);
 
-render(demo);
-
-if (module.hot) {
-  module.hot.accept( () => {
-    render(demo);
-  });
-}
+      if (module.hot) {
+        module.hot.accept( () => {
+          render(demo);
+        });
+      }

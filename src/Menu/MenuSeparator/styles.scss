@@ -1,0 +1,16 @@
+@import '../../common.scss';
+
+.oxygen.menu-separator {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  font-size: 14px;
+  color: $asbestos;
+
+  &::before {
+    position: relative;
+    content: '•';
+  }
+}
