@@ -177,7 +177,25 @@ const demo = () => {
                 </PanelHeader>
                 <PanelBody>
                   <Menu small>
-
+                    <MenuItem>
+                      Home
+                    </MenuItem>
+                    <MenuSeparator />
+                    <MenuItem>
+                      Gallery
+                    </MenuItem>
+                    <MenuSeparator />
+                    <MenuItem>
+                      <img style={{height: '30px', width: 'auto'}} src="https://wikileaks.org/IMG/rubon32.png"/>
+                    </MenuItem>
+                    <MenuSeparator />
+                    <MenuItem>
+                      Forums
+                    </MenuItem>
+                    <MenuSeparator />
+                    <MenuItem>
+                      Contact
+                    </MenuItem>
                   </Menu>
                   <Menu>
                     <MenuItem>
@@ -201,7 +219,25 @@ const demo = () => {
                     </MenuItem>
                   </Menu>
                   <Menu big>
-
+                    <MenuItem button>
+                      Home
+                    </MenuItem>
+                    <MenuSeparator />
+                    <MenuItem button>
+                      Gallery
+                    </MenuItem>
+                    <MenuSeparator />
+                    <MenuItem button>
+                      <img style={{height: '40px', width: 'auto'}} src="https://wikileaks.org/IMG/rubon32.png"/>
+                    </MenuItem>
+                    <MenuSeparator />
+                    <MenuItem button>
+                      Forums
+                    </MenuItem>
+                    <MenuSeparator />
+                    <MenuItem button>
+                      Contact
+                    </MenuItem>
                   </Menu>
                 </PanelBody>
               </Panel>
