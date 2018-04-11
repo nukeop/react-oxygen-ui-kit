@@ -1,3 +1,5 @@
+@import '../../common.scss';
+
 .oxygen.menu-item {
   position: relative;
   display: flex;
@@ -5,4 +7,13 @@
   align-items: center;
   margin: 0 1rem;
   max-height: 100%;
+
+  &.item-button {
+    cursor: pointer;
+    padding: 0 1rem;
+
+    &:hover {
+      background: rgba($silver, 0.5);
+    }
+  }
 }

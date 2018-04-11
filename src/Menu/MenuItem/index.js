@@ -11,7 +11,7 @@ const MenuItem = props => {
       className={
         classnames(
           "oxygen menu-item",
-          {"button": props.button},
+          {"item-button": props.button},
           props.className
         )
       }
