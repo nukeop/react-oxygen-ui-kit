@@ -64,6 +64,11 @@ $asbestos: #7f8c8d;
   }
 }
 
+@mixin inverted-button($col, $col2) {
+  @include button-color ($clouds, $col2, $col);
+  border: 2px solid $col;
+}
+
 @mixin borderRadius {
   border-radius: 0.25rem;
 }

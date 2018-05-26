@@ -19,6 +19,7 @@ const Button = props => {
           {'dark-orange': props.darkOrange},
           {'red': props.red},
           {'fluid': props.fluid},
+	  {'inverted': props.inverted},
           {'attachLeft': props.attach === 'left'},
           {'attachRight': props.attach === 'right'},
           {'attachMid': props.attach === 'mid'}
@@ -40,7 +41,8 @@ Button.propTypes = {
   darkOrange: PropTypes.bool,
   red: PropTypes.bool,
   fluid: PropTypes.bool,
-  attach: PropTypes.string
+  inverted: PropTypes.bool,
+  attach: PropTypes.string,
 };
 
 export default Button;

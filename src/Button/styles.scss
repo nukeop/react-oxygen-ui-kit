@@ -33,32 +33,64 @@
     @include button-color($turquoise, $greensea, $clouds);
   }
 
+  &.teal.inverted {
+    @include inverted-button($turquoise, $greensea);
+  }
+
   &.green {
     @include button-color($emerald, $nephritis, $clouds);
+  }
+
+  &.green.inverted {
+    @include inverted-button($emerald, $nephritis);
   }
 
   &.blue {
     @include button-color($river, $blue, $clouds);
   }
 
+  &.blue.inverted {
+    @include inverted-button($river, $blue);
+  }
+
   &.purple {
     @include button-color($amethyst, $wisteria, $clouds);
+  }
+
+  &.purple.inverted {
+    @include inverted-button($amethyst, $wisteria);
   }
 
   &.black {
     @include button-color($asphalt, $midnight, $clouds);
   }
 
+  &.black.inverted {
+    @include inverted-button($asphalt, $midnight);
+  }
+
   &.orange {
     @include button-color($sunflower, $orange, $clouds);
+  }
+
+  &.orange.inverted {
+    @include inverted-button($sunflower, $orange);
   }
 
   &.dark-orange {
     @include button-color($carrot, $pumpkin, $clouds);
   }
 
+  &.dark-orange.inverted {
+    @include inverted-button($carrot, $pumpkin);
+  }
+
   &.red {
     @include button-color($red, $darkred, $clouds);
+  }
+
+  &.red.inverted {
+    @include inverted-button($red, $darkred);
   }
 
   &.fluid {
