@@ -1,8 +1,7 @@
 @import '../common.scss';
 
 .oxygen.button {
-  min-height: 1em;
-  margin: 0 0.25em 0 0;
+  margin: 0 0.25em 0.5em 0;
   padding: 0.75em 1.5em 0.75em;
 
   cursor: pointer;
@@ -26,7 +25,7 @@
 
   &:active {
     margin-top: 3px;
-    margin-bottom: -3px;
+    margin-bottom: 5px;
     box-shadow: none;
   }
 
@@ -68,7 +67,7 @@
 
   &.attachLeft {
     @include borderRadiusLeft;
-    margin: 0;
+    margin-right: 0;
   }
 
   &.attachRight {
@@ -77,6 +76,7 @@
 
   &.attachMid {
     @include borderRadiusMid;
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
