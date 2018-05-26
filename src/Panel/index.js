@@ -12,6 +12,7 @@ const Panel = props => {
         classnames(
           "oxygen panel",
           {"fluid": props.fluid},
+	  {"dark": props.dark},
           props.className
         )
       }
@@ -23,6 +24,7 @@ const Panel = props => {
 
 Panel.propTypes = {
   fluid: PropTypes.bool,
+  dark: PropTypes.bool,
   className: PropTypes.string,
   style: PropTypes.object
 };
