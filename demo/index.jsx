@@ -17,7 +17,8 @@ import {
   PanelBody,
   PanelFooter,
   PanelHeader,
-  Paragraph
+  Paragraph,
+  Rating
 } from '../src';
 
 const render = Component => {
@@ -263,6 +264,19 @@ const demo = () => {
             </Menu>
           </PanelBody>
         </Panel>
+      </section>
+
+      <section>
+	<Panel fluid>
+          <PanelHeader>Ratings</PanelHeader>
+          <PanelBody>
+	    <Rating stars={3} />
+	    <Rating stars={4} score="9.4" showScore green/>
+	    <Rating stars={3} score="6.2" showScore yellow/>
+	    <Rating stars={2} score="3.7" showScore orange/>
+	    <Rating stars={1} score="1.3" showScore red/>
+	  </PanelBody>
+	</Panel>
       </section>
 
     </div>
