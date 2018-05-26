@@ -13,3 +13,8 @@
     flex-flow: row wrap;
   }
 }
+
+.oxygen.panel.dark > .oxygen.panel-body {
+  background: $asphalt;
+  color: rgba($clouds, 0.89);
+}

@@ -16,4 +16,8 @@
   &.fluid {
     width: 100%;
   }
+
+  &.dark {
+    background: $midnight;
+  }
 }

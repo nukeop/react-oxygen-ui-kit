@@ -8,3 +8,9 @@
   text-transform: uppercase;
   color: rgba($midnight, 0.89);
 }
+
+.oxygen.panel.dark > .oxygen.panel-header {
+  background: rgba($midnight, 0.89);
+  color: rgba($clouds, 0.89);
+  border-color: rgba($asphalt, 0.5);
+}
