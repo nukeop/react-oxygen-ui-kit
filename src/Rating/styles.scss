@@ -1,0 +1,60 @@
+@import '../common.scss';
+
+.oxygen.rating {
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 2em;
+  margin: 0 0.25em 0.5em 0;
+  max-width: 6em;
+  
+  @include transition;
+
+  .stars-container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    background: $midnight;
+    padding: 0.25em 0.75em;
+    box-sizing: border-box;
+    @include borderRadius;
+  }
+  
+  .star {
+    color: $sunflower;
+  }
+
+  .score {
+    padding: 0.25em 0.5em;
+    color: $clouds;
+    background: $emerald;
+    box-sizing: border-box;
+    @include borderRadiusLeft;
+
+    &.green {
+      background: $emerald;
+    }
+
+    &.yellow {
+      background: $sunflower;
+    }
+
+    &.orange {
+      background: $carrot;
+    }
+
+    &.red {
+      background: $red;
+    }
+  }
+
+  &.show-score {
+    .stars-container {
+      @include borderRadiusRight;
+    }
+  }
+}

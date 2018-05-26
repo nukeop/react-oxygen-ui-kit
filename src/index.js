@@ -11,6 +11,7 @@ import PanelBody from './PanelBody';
 import PanelFooter from './PanelFooter';
 import PanelHeader from './PanelHeader';
 import Paragraph from './Paragraph';
+import Rating from './Rating';
 
 module.exports = {
   Background,
@@ -25,5 +26,6 @@ module.exports = {
   PanelBody,
   PanelFooter,
   PanelHeader,
-  Paragraph
+  Paragraph,
+  Rating
 };
