@@ -1,5 +1,7 @@
 import Background from './Background';
 import Button from './Button';
+import Column from './Column';
+import Container from './Container';
 import Headline from './Headline';
 import Input from './Input';
 import Loader from './Loader';
@@ -12,10 +14,14 @@ import PanelFooter from './PanelFooter';
 import PanelHeader from './PanelHeader';
 import Paragraph from './Paragraph';
 import Rating from './Rating';
+import Row from './Row';
+import Sidebar from './Sidebar';
 
 module.exports = {
   Background,
   Button,
+  Column,
+  Container,
   Headline,
   Input,
   Loader,
@@ -27,5 +33,7 @@ module.exports = {
   PanelFooter,
   PanelHeader,
   Paragraph,
-  Rating
+  Rating,
+  Row,
+  Sidebar
 };
