@@ -1,0 +1,12 @@
+@import "../common.scss";
+
+.oxygen.sidebar-content {
+  flex: 1 1 auto;
+  transition: 1s;
+  
+  &>* {
+    @include fadeIn;
+  }
+}
+
+

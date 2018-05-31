@@ -29,7 +29,7 @@ $concrete: #95a5a6;
 $asbestos: #7f8c8d;
 
 .oxygen {
-  font-family: 'Roboto Condensed';
+  font-family: 'Roboto';
 }
 
 @mixin shadow1 {
@@ -107,4 +107,18 @@ $asbestos: #7f8c8d;
 
 @mixin transition {
   transition: 0.25s;
+}
+
+@mixin fadeIn {
+  animation: fade-in 0.25s ease-in-out ;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

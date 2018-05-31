@@ -1,12 +1,15 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
+import Lorem from 'react-lorem-component';
 
 import './styles.scss';
 
 import {
   Background,
   Button,
+  Column,
+  Container,
   Headline,
   Input,
   Loader,
@@ -18,8 +21,14 @@ import {
   PanelFooter,
   PanelHeader,
   Paragraph,
-  Rating
+  Rating,
+  Row,
+  Sidebar,
+  SidebarEntry,
+  SidebarLabel
 } from '../src';
+
+import ColumnDemo from './columnDemo';
 
 const render = Component => {
   ReactDOM.render(
@@ -30,258 +39,69 @@ const render = Component => {
   );
 };
 
-const demo = () => {
-  return (
-    <div>
+const sidebarContent = [
+  {
+    label: 'Layout',
+    entries: [
+      {title: 'Column', element: <ColumnDemo />},
+      {title: 'Container'},
+      {title: 'Row'}
+    ]
+  }, {
+    label: 'Elements',
+    entries: [
+      {title: 'Background'},
+      {title: 'Button'},
+      {title: 'Headline'},
+      {title: 'Input'},
+      {title: 'Loader'},
+      {title: 'Panel'},
+      {title: 'Rating'}
+    ]
+  },
+  {
+    label: 'Views',
+    entries: [
+      {title: 'Menu'},
+      {title: 'Sidebar'}
+    ]
+  }
+];
 
+const demo = () => {
+  return(
+    <div style={{borderTop: "10px solid #f1c40f"}}>
       <section>
         <Background
-           image='https://i.imgur.com/KTKjdBU.jpg'
-        />
-
-        <div style={{flexFlow: 'column', width: '100%', padding: '10rem 0'}}>
+          image='https://i.imgur.com/KTKjdBU.jpg'
+          color1='#3494E6'
+          color2='#EC6EAD'
+          />
+        <Column grow={1} style={{padding: '9rem 0 7rem 0'}}>
           <Headline>
             React UI Kit
           </Headline>
           <Paragraph>
             A set of reusable UI components built with React and designed to be easy to integrate with any website.
           </Paragraph>
-        </div>
-
+        </Column>
       </section>
 
       <section>
-        <Panel fluid>
-          <PanelBody>
-            <Background
-               image='https://i.imgur.com/pq5NYk0.jpg'
-               color1='#0575e6'
-               color2='#00f260'
-               centered
-            />
-            <Headline>
-              Panel with a background
-            </Headline>
-            <Paragraph>And a couple of paragraphs of text</Paragraph>
-            <Paragraph>All UI elements can be combined</Paragraph>
-          </PanelBody>
-        </Panel>
+        <Row grow={1}>
+          <Container>
+            <Row grow={1}>
+              <Sidebar
+		sticky
+		sections={sidebarContent}
+	      />
+            </Row>
+          </Container>
+        </Row>
       </section>
-
-      <section>
-        <Panel fluid>
-          <PanelHeader>
-            Panels - examples
-          </PanelHeader>
-          <PanelBody row>
-
-            <Panel>
-              <PanelHeader>Panel header</PanelHeader>
-              <PanelBody style={{paddingBottom: '8rem'}}>Standard panel body which can contain any text</PanelBody>
-              <PanelFooter>Panel footer</PanelFooter>
-            </Panel>
-
-            <Panel>
-              <PanelHeader>Panel with a background</PanelHeader>
-              <PanelBody>
-                <Background
-                   image='https://i.imgur.com/hSimrrl.jpg'
-                   centered
-                   colored
-                   noGradient
-                />
-                <Paragraph>
-                  And some text for good measure
-                </Paragraph>
-              </PanelBody>
-              <PanelFooter>Another footer</PanelFooter>
-            </Panel>
-
-            <Panel
-               style={{width: '19.6rem', height: 'auto'}}
-            >
-              <Background
-                 image='https://i.imgur.com/PxJNP62.jpg'
-                 centered
-                 colored
-                 noGradient
-              />
-              <Paragraph
-                 style={{background: '#2c3e5099', zIndex: 10, margin: '1rem', padding: '1rem', borderRadius: '0.25rem'}}
-              >
-                This panel has no header, footer, or body, but it has a background and some text
-              </Paragraph>
-            </Panel>
-
-	    <Panel dark>
-	      <PanelHeader>Dark panel variant</PanelHeader>
-	      <PanelBody>
-		<Paragraph>This panel has the "dark" attribute, which inverts its colors.</Paragraph>
-	      </PanelBody>
-	    </Panel>
-          </PanelBody>
-        </Panel>
-      </section>
-
-      <section>
-        <Panel fluid>
-          <PanelHeader>
-            Buttons - examples
-          </PanelHeader>
-          <PanelBody row>
-            <Button>Click here</Button>
-            <Button teal>Click here</Button>
-            <Button green>Click here</Button>
-            <Button blue>Click here</Button>
-            <Button purple>Click here</Button>
-            <Button black>Click here</Button>
-            <Button orange>Click here</Button>
-            <Button darkOrange>Click here</Button>
-            <Button red>Click here</Button>
-          </PanelBody>
-        </Panel>
-      </section>
-
-      <section>
-	<Panel fluid>
-	  <PanelHeader>
-	    Buttons - inverted
-	  </PanelHeader>
-	  <PanelBody row>
-	    <Button red inverted>Click here</Button>
-	    <Button darkOrange inverted>Click here</Button>
-	    <Button orange inverted>Click here</Button>
-	    <Button black inverted>Click here</Button>
-	    <Button purple inverted>Click here</Button>
-	    <Button blue inverted>Click here</Button>
-	    <Button green inverted>Click here</Button>
-	    <Button teal inverted>Click here</Button>
-	  </PanelBody>
-	</Panel>
-      </section>
-
-      <section>
-        <Panel fluid>
-          <PanelHeader>
-            Buttons and inputs - advanced examples
-          </PanelHeader>
-          <PanelBody row>
-            <Button attach='left' green>Yes</Button>
-            <Button attach='mid' blue>Maybe</Button>
-            <Button attach='right' red>No</Button>
-            <Input border />
-            <Button orange attach='left'>Submit</Button>
-            <Input border attach='right'/>
-          </PanelBody>
-        </Panel>
-
-      </section>
-
-      <section>
-        <Panel fluid>
-          <PanelHeader>
-            Loaders
-          </PanelHeader>
-          <PanelBody row>
-            <Loader type="loader1"/>
-            <Loader type="loader2"/>
-            <Loader type="loader3"/>
-            <Loader type="loader4"/>
-            <Loader type="loader5"/>
-            <Loader type="loader6"/>
-          </PanelBody>
-        </Panel>
-      </section>
-
-      <section>
-        <Panel fluid>
-          <PanelHeader>
-            Menu
-          </PanelHeader>
-          <PanelBody>
-            <Menu small>
-              <MenuItem>
-                Home
-              </MenuItem>
-              <MenuSeparator />
-              <MenuItem>
-                Gallery
-              </MenuItem>
-              <MenuSeparator />
-              <MenuItem>
-                <img style={{height: '30px', width: 'auto'}} src="https://wikileaks.org/IMG/rubon32.png"/>
-              </MenuItem>
-              <MenuSeparator />
-              <MenuItem>
-                Forums
-              </MenuItem>
-              <MenuSeparator />
-              <MenuItem>
-                Contact
-              </MenuItem>
-            </Menu>
-            <Menu>
-              <MenuItem>
-                Home
-              </MenuItem>
-              <MenuSeparator />
-              <MenuItem>
-                Gallery
-              </MenuItem>
-              <MenuSeparator />
-              <MenuItem>
-                <img style={{height: '40px', width: 'auto'}} src="https://wikileaks.org/IMG/rubon32.png"/>
-              </MenuItem>
-              <MenuSeparator />
-              <MenuItem>
-                Forums
-              </MenuItem>
-              <MenuSeparator />
-              <MenuItem>
-                Contact
-              </MenuItem>
-            </Menu>
-            <Menu big>
-              <MenuItem button>
-                Home
-              </MenuItem>
-              <MenuSeparator />
-              <MenuItem button>
-                Gallery
-              </MenuItem>
-              <MenuSeparator />
-              <MenuItem button>
-                <img style={{height: '40px', width: 'auto'}} src="https://wikileaks.org/IMG/rubon32.png"/>
-              </MenuItem>
-              <MenuSeparator />
-              <MenuItem button>
-                Forums
-              </MenuItem>
-              <MenuSeparator />
-              <MenuItem button>
-                Contact
-              </MenuItem>
-            </Menu>
-          </PanelBody>
-        </Panel>
-      </section>
-
-      <section>
-	<Panel fluid>
-          <PanelHeader>Ratings</PanelHeader>
-          <PanelBody>
-	    <Rating stars={3} />
-	    <Rating stars={4} score="9.4" showScore green/>
-	    <Rating stars={3} score="6.2" showScore yellow/>
-	    <Rating stars={2} score="3.7" showScore orange/>
-	    <Rating stars={1} score="1.3" showScore red/>
-	  </PanelBody>
-	</Panel>
-      </section>
-
     </div>
   );
-};
+}
 
 render(demo);
 
