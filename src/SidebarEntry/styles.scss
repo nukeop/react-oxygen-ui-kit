@@ -1,0 +1,14 @@
+@import "../common.scss";
+
+.oxygen.sidebar-entry {
+  cursor: pointer;
+  width: 100%;
+  padding: 0.25em 0.5em;
+  box-sizing: border-box;
+
+  @include borderRadius;
+
+  &:hover {
+    background: rgba($asbestos, 0.2);
+  }
+}

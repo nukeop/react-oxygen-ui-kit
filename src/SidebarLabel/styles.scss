@@ -1,0 +1,15 @@
+@import '../common.scss';
+
+.oxygen.sidebar-label {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba($asphalt, 0.89);
+  font-size: 0.75em;
+  margin-bottom: 1em;
+  user-select: none;
+  -moz-user-select: none;
+
+  &:not(:first-child) {
+    margin-top: 1em;
+  }
+}

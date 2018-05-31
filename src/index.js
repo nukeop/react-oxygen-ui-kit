@@ -16,6 +16,8 @@ import Paragraph from './Paragraph';
 import Rating from './Rating';
 import Row from './Row';
 import Sidebar from './Sidebar';
+import SidebarEntry from './SidebarEntry';
+import SidebarLabel from './SidebarLabel';
 
 module.exports = {
   Background,
@@ -35,5 +37,7 @@ module.exports = {
   Paragraph,
   Rating,
   Row,
-  Sidebar
+  Sidebar,
+  SidebarEntry,
+  SidebarLabel
 };
