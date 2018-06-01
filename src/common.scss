@@ -30,6 +30,7 @@ $asbestos: #7f8c8d;
 
 .oxygen {
   font-family: 'Roboto';
+  color: rgba($midnight, 0.89);
 }
 
 @mixin shadow1 {
@@ -120,5 +121,39 @@ $asbestos: #7f8c8d;
 
   100% {
     opacity: 1;
+  }
+}
+
+code.oxygen {
+  background: rgba($silver, 0.4);
+  font-family: monospace;
+  padding: 0.4em 0.6em;
+  @include borderRadius;
+}
+
+table.oxygen {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1em;
+  color: rgba($midnight, 0.89);
+  border-collapse: separate;
+  border-spacing: 0;
+  
+  thead {
+
+  }
+
+  th, td {
+    text-align: left;
+    border-bottom: 1px solid rgba($midnight, 0.4);
+    padding: 0.4em 0.6em;
+  }
+
+  tr {
+    
+  }
+
+  td {
+
   }
 }
