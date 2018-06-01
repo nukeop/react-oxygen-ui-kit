@@ -29,6 +29,8 @@ import {
 } from '../src';
 
 import ColumnDemo from './columnDemo';
+import ContainerDemo from './containerDemo';
+import RowDemo from './rowDemo';
 
 const render = Component => {
   ReactDOM.render(
@@ -44,8 +46,8 @@ const sidebarContent = [
     label: 'Layout',
     entries: [
       {title: 'Column', element: <ColumnDemo />},
-      {title: 'Container'},
-      {title: 'Row'}
+      {title: 'Container', element: <ContainerDemo />},
+      {title: 'Row', element: <RowDemo />}
     ]
   }, {
     label: 'Elements',
