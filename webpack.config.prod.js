@@ -9,6 +9,7 @@ module.exports = {
     path: DEMO_DIR,
     filename: 'bundle.js'
   },
+  mode: 'production',
   module: {
     rules: [
       {

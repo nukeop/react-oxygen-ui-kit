@@ -3,4 +3,9 @@
   margin: 0 auto;
   max-width: 1344px;
   width: 1344px;
+
+  &.narrow {
+    max-width: 700px;
+    width: 700px;
+  }
 }

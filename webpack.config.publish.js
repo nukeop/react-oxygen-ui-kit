@@ -13,6 +13,7 @@ module.exports = {
     libraryTarget: "commonjs2",
     libraryExport: "default"
   },
+  mode: 'production',
   module: {
     rules: [
       {
