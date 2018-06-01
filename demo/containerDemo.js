@@ -2,7 +2,7 @@ import React from 'react';
 import Lorem from 'react-lorem-component';
 
 import {
-  Column, Row, Container
+  Column, Row, Container, Well
 } from '../src';
 
 const ContainerDemo = () => {
@@ -31,22 +31,35 @@ const ContainerDemo = () => {
 	</tbody>
       </table>
 
-      Container is a wrapper that renders its children in a limited
-      width box. <br /><br />
+      <span style={{marginBottom: '0.25em'}}>
+	Container is a wrapper that renders its children in a
+	limited	width box.
+      </span>
 
-      Standard container:
-      <Container><Lorem count={3} /></Container>
+      <span style={{marginBottom: '1em'}}>Standard container:</span>
+      
+      <Well>
+	<Container>
+	  <Lorem paragraphLowerBound={9} count={3} />
+	</Container>
+      </Well>
 
-      Narrow container:
-      <Container narrow>
-	<h2>Header</h2>
-	<Lorem count={3} />
-      </Container>
+      <span style={{marginBottom: '1em'}}>Narrow container:</span>
+      
+      <Well>
+	<Container narrow>
+	  <h2>Header</h2>
+	  <Lorem count={3} />
+	</Container>
+      </Well>
 
-      Justified container:
-      <Container style={{textAlign: 'justify'}}>
-	<Lorem paragraphLowerBound={9} count={3} />
-      </Container>
+      <span style={{marginBottom: '1em'}}>Justified container:</span>
+      
+      <Well>
+	<Container narrow style={{textAlign: 'justify'}}>
+	  <Lorem paragraphLowerBound={9} count={3} />
+	</Container>
+      </Well>
       
     </Column>
   );
