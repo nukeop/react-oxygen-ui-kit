@@ -7,21 +7,10 @@ import './styles.scss';
 
 import {
   Background,
-  Button,
   Column,
   Container,
   Headline,
-  Input,
-  Loader,
-  Menu,
-  MenuItem,
-  MenuSeparator,
-  Panel,
-  PanelBody,
-  PanelFooter,
-  PanelHeader,
   Paragraph,
-  Rating,
   Row,
   Sidebar,
   SidebarEntry,
@@ -47,7 +36,8 @@ const sidebarContent = [
     entries: [
       {title: 'Column', element: <ColumnDemo />},
       {title: 'Container', element: <ContainerDemo />},
-      {title: 'Row', element: <RowDemo />}
+      {title: 'Row', element: <RowDemo />},
+      {title: 'Well'}
     ]
   }, {
     label: 'Elements',

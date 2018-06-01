@@ -18,6 +18,7 @@ import Row from './Row';
 import Sidebar from './Sidebar';
 import SidebarEntry from './SidebarEntry';
 import SidebarLabel from './SidebarLabel';
+import Well from './Well';
 
 module.exports = {
   Background,
@@ -39,5 +40,6 @@ module.exports = {
   Row,
   Sidebar,
   SidebarEntry,
-  SidebarLabel
+  SidebarLabel,
+  Well
 };
