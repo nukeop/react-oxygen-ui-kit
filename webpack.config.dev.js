@@ -21,7 +21,7 @@ module.exports = {
     publicPath: 'http://localhost:8080/'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?/,
         loader: 'babel-loader'
