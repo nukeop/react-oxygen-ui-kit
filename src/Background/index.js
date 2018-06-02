@@ -27,8 +27,6 @@ const Background = props => {
     : null;
   overlayStyle.background = noGradient ? 'transparent' : overlayStyle.background;
 
-  console.log(overlayStyle);
-  
   return (
     <div
       className={
