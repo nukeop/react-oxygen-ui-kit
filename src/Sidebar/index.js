@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import _ from 'lodash';
 
 import SidebarEntry from '../SidebarEntry';
 import SidebarLabel from '../SidebarLabel';
@@ -11,7 +12,7 @@ class Sidebar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      element: null
+      element: _.head(_.head(props.sections).entries).element
     };
   }
 

@@ -25,7 +25,7 @@ const ContainerDemo = () => {
 
 	  <tr>
 	    <td><code className="oxygen">children</code></td>
-	    <td>number</td>
+	    <td>node</td>
 	    <td>Primary content.</td>
 	  </tr>
 	</tbody>

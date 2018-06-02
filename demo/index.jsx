@@ -20,6 +20,7 @@ import {
 import ColumnDemo from './columnDemo';
 import ContainerDemo from './containerDemo';
 import RowDemo from './rowDemo';
+import WellDemo from './wellDemo';
 
 const render = Component => {
   ReactDOM.render(
@@ -37,7 +38,7 @@ const sidebarContent = [
       {title: 'Column', element: <ColumnDemo />},
       {title: 'Container', element: <ContainerDemo />},
       {title: 'Row', element: <RowDemo />},
-      {title: 'Well'}
+      {title: 'Well', element: <WellDemo />}
     ]
   }, {
     label: 'Elements',
