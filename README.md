@@ -1,4 +1,7 @@
 # react-oxygen-ui-kit ![Travis](https://img.shields.io/travis/nukeop/react-oxygen-ui-kit.svg?style=for-the-badge)
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/nukeop/react-oxygen-ui-kit.svg)](https://greenkeeper.io/)
+
 Easy to use UI Kit for React
 
 ## Live demo
