@@ -4,27 +4,32 @@ import classnames from 'classnames';
 
 import Panel from '../Panel';
 
-import styles from './styles.scss';
+import './styles.scss';
 
-const Menu = props => {
-  return (
-    <Panel
-      className={
+const Menu = props => (
+  <Panel
+    className={
         classnames(
-          "menu",
-          {"small": props.small},
-          {"big": props.big}
+          'menu',
+          { small: props.small },
+          { big: props.big }
         )
       }
-    >
-      {props.children}
-    </Panel>
-  );
-}
+  >
+    {props.children}
+  </Panel>
+);
 
 Menu.propTypes = {
+  children: PropTypes.node,
   small: PropTypes.bool,
   big: PropTypes.bool
+};
+
+Menu.defaultProps = {
+  children: null,
+  small: false,
+  big: false
 };
 
 export default Menu;

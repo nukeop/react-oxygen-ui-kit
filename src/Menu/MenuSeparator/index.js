@@ -1,14 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-import styles from './styles.scss';
+import './styles.scss';
 
-const MenuSeparator = props => {
-  return (
-    <div className="oxygen menu-separator">
-
-    </div>
-  );
-}
+const MenuSeparator = () => (
+  <div className="oxygen menu-separator" />
+);
 
 export default MenuSeparator;

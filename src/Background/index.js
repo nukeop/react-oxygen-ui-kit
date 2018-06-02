@@ -2,53 +2,47 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-import styles from './styles.scss';
+import './styles.scss';
 
-class Background extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const Background = props => {
+  const {
+    image,
+    color1,
+    color2,
+    centered,
+    noGradient,
+    colored,
+    className,
+    style
+  } = props;
 
-  render() {
-    let {
-      image,
-      color1,
-      color2,
-      centered,
-      noGradient,
-      colored,
-      className,
-      style
-    } = this.props;
+  const bgImageStyle = {};
+  bgImageStyle.backgroundImage = `url(${image})`;
+  bgImageStyle.backgroundPosition = centered ? 'center center' : null;
+  bgImageStyle.filter = colored ? 'grayscale(0)' : null;
 
-    let bgImageStyle = {};
-    bgImageStyle.backgroundImage = `url(${image})`;
-    centered ? bgImageStyle.backgroundPosition = 'center center' : null;
-    colored? bgImageStyle.filter = 'grayscale(0)' : null;
-
-    let overlayStyle = {};
-    color1 && color2
-    ? overlayStyle.background = `linear-gradient(135deg, ${color1} 10%, ${color2} 100%)`
+  const overlayStyle = {};
+  overlayStyle.background = color1 && color2
+    ? `linear-gradient(135deg, ${color1} 10%, ${color2} 100%)`
     : null;
-    noGradient ? overlayStyle.background = 'transparent' : null;
+  overlayStyle.background = noGradient ? 'transparent' : null;
 
-    return (
-      <div
-        className={
-          classnames(
-            'oxygen background',
-            className
+  return (
+    <div
+      className={
+        classnames(
+          'oxygen background',
+          className
         )
-       }
-       style={style}
-      >
-        <div className='bg-image' style={bgImageStyle}></div>
-        <div className='bg-overlay' style={overlayStyle}></div>
-        {this.props.children}
-      </div>
-    );
-  }
-}
+      }
+      style={style}
+    >
+      <div className="bg-image" style={bgImageStyle} />
+      <div className="bg-overlay" style={overlayStyle} />
+      {this.props.children}
+    </div>
+  );
+};
 
 Background.propTypes = {
   image: PropTypes.string,
@@ -59,6 +53,17 @@ Background.propTypes = {
   colored: PropTypes.bool,
   className: PropTypes.string,
   style: PropTypes.object
+};
+
+Background.defaultProps = {
+  image: '',
+  color1: null,
+  color2: null,
+  centered: false,
+  noGradient: false,
+  colored: false,
+  className: null,
+  style: {}
 };
 
 export default Background;

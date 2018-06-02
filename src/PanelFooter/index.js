@@ -1,13 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import styles from './styles.scss';
+import './styles.scss';
 
-const PanelFooter = props => {
-  return (
-    <div className="oxygen panel-footer">
-      {props.children}
-    </div>
-  );
-}
+const PanelFooter = props => (
+  <div className="oxygen panel-footer">
+    {props.children}
+  </div>
+);
+
+PanelFooter.propTypes = {
+  children: PropTypes.node,
+};
+
+PanelFooter.defaultProps = {
+  children: null
+};
 
 export default PanelFooter;

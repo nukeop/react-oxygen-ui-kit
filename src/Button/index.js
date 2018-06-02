@@ -2,36 +2,35 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-import styles from './styles.scss';
+import './styles.scss';
 
-const Button = props => {
-  return (
-    <button
-      className={
+const Button = props => (
+  <button
+    className={
         classnames(
-          "oxygen button",
-          {'teal': props.teal},
-          {'green': props.green},
-          {'blue': props.blue},
-          {'purple': props.purple},
-          {'black': props.black},
-          {'orange': props.orange},
-          {'dark-orange': props.darkOrange},
-          {'red': props.red},
-          {'fluid': props.fluid},
-	        {'inverted': props.inverted},
-          {'attachLeft': props.attach === 'left'},
-          {'attachRight': props.attach === 'right'},
-          {'attachMid': props.attach === 'mid'}
+          'oxygen button',
+          { teal: props.teal },
+          { green: props.green },
+          { blue: props.blue },
+          { purple: props.purple },
+          { black: props.black },
+          { orange: props.orange },
+          { 'dark-orange': props.darkOrange },
+          { red: props.red },
+          { fluid: props.fluid },
+          { inverted: props.inverted },
+          { attachLeft: props.attach === 'left' },
+          { attachRight: props.attach === 'right' },
+          { attachMid: props.attach === 'mid' }
         )
       }
-      >
-      {props.children}
-    </button>
-  );
-}
+  >
+    {props.children}
+  </button>
+);
 
 Button.propTypes = {
+  children: PropTypes.node,
   teal: PropTypes.bool,
   green: PropTypes.bool,
   blue: PropTypes.bool,
@@ -43,6 +42,21 @@ Button.propTypes = {
   fluid: PropTypes.bool,
   inverted: PropTypes.bool,
   attach: PropTypes.string
+};
+
+Button.defaultProps = {
+  children: null,
+  teal: false,
+  green: false,
+  blue: false,
+  purple: false,
+  black: false,
+  orange: false,
+  darkOrange: false,
+  red: false,
+  fluid: false,
+  inverted: false,
+  attach: ''
 };
 
 export default Button;

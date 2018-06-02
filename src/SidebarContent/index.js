@@ -1,20 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './styles.scss';
+import './styles.scss';
 
-const SidebarContent = props => {
-    return (
-      <div
-	className="oxygen sidebar-content"
-      >
-	{props.children}
-      </div>      
-    );
-}
+const SidebarContent = props => (
+  <div
+    className="oxygen sidebar-content"
+  >
+    {props.children}
+  </div>
+);
 
 SidebarContent.propTypes = {
+  children: PropTypes.node
+};
 
+SidebarContent.defaultProps = {
+  children: null
 };
 
 export default SidebarContent;
