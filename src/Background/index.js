@@ -25,8 +25,10 @@ const Background = props => {
   overlayStyle.background = color1 && color2
     ? `linear-gradient(135deg, ${color1} 10%, ${color2} 100%)`
     : null;
-  overlayStyle.background = noGradient ? 'transparent' : null;
+  overlayStyle.background = noGradient ? 'transparent' : overlayStyle.background;
 
+  console.log(overlayStyle);
+  
   return (
     <div
       className={
