@@ -4,7 +4,7 @@
   "description": "Easy to use UI Kit for React",
   "main": "index.js",
   "scripts": {
-    "test": "ava",
+    "test": "eslint src",
     "prepare": "webpack -p --progress --colors --config webpack.config.publish.js",
     "demo": "webpack -p --progress --colors --env=prod",
     "dev": "webpack-dev-server -d --inline --env=dev"
@@ -29,6 +29,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.8",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",

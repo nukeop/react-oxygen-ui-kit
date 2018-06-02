@@ -37,14 +37,14 @@ class Sidebar extends React.Component {
         >
           {
             sections &&
-              sections.map((section, i) => (
-                <React.Fragment key={i}>
+              sections.map(section => (
+                <React.Fragment key={section.label}>
                   <SidebarLabel>
                     {section.label}
                   </SidebarLabel>
                   {
                     section.entries.map(entry => (
-                      <SidebarEntry onClick={() => this.onEntryClicked(entry)}>
+                      <SidebarEntry key={entry.title} onClick={() => this.onEntryClicked(entry)}>
                         {entry.title}
                       </SidebarEntry>
                     ))

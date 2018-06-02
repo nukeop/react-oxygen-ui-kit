@@ -39,12 +39,13 @@ const Background = props => {
     >
       <div className="bg-image" style={bgImageStyle} />
       <div className="bg-overlay" style={overlayStyle} />
-      {this.props.children}
+      {props.children}
     </div>
   );
 };
 
 Background.propTypes = {
+  children: PropTypes.node,
   image: PropTypes.string,
   color1: PropTypes.string,
   color2: PropTypes.string,
@@ -56,6 +57,7 @@ Background.propTypes = {
 };
 
 Background.defaultProps = {
+  children: null,
   image: '',
   color1: null,
   color2: null,
