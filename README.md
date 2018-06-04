@@ -19,26 +19,26 @@ $ npm install react-oxygen-ui-kit
 ```javascript
 
 import {
-	Column,
-	Container,
-	Row
+  Column,
+  Container,
+  Row
 } from 'react-oxygen-ui-kit';
 
 const comp = props => {
-	return (
-		<section>
-			<Row>
-				<Container>
-					<Column>
-						First column of test
-					</Column>
-					<Column>
-						Second column of text
-					</Column>
-				</Container>
-			</Row>
-		</section>
-	);
+  return (
+    <section>
+      <Row>
+        <Container>
+          <Column>
+            First column of test
+          </Column>
+          <Column>
+            Second column of text
+          </Column>
+        </Container>
+      </Row>
+    </section>
+  );
 };
 
 ```
