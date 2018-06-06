@@ -30,7 +30,7 @@ const comp = props => {
       <Row>
         <Container>
           <Column>
-            First column of test
+            First column of text
           </Column>
           <Column>
             Second column of text

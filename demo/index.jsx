@@ -23,6 +23,7 @@ import RowDemo from './rowDemo';
 import WellDemo from './wellDemo';
 import BackgroundDemo from './backgroundDemo';
 import ButtonDemo from './buttonDemo';
+import HeadlineDemo from './headlineDemo';
 
 const render = Component => {
   ReactDOM.render(
@@ -47,7 +48,7 @@ const sidebarContent = [
     entries: [
       {title: 'Background', element: <BackgroundDemo />},
       {title: 'Button', element: <ButtonDemo />},
-      {title: 'Headline'},
+      {title: 'Headline', element: <HeadlineDemo />},
       {title: 'Input'},
       {title: 'Loader'},
       {title: 'Panel'},

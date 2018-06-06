@@ -18,4 +18,8 @@
 
   font-size: 3rem;
   font-weight: normal;
+
+  &.inverted {
+    color: rgba($midnight, 0.89);
+  }
 }

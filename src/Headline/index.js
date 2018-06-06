@@ -6,18 +6,29 @@ import './styles.scss';
 
 const Headline = props => (
   <div
-    className={classnames('oxygen headline')}
+    style={props.style}
+    className={classnames(
+       'oxygen headline',
+       props.className,
+       { inverted: props.inverted }
+     )}
   >
     {props.children}
   </div>
 );
 
 Headline.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
+  inverted: PropTypes.bool,
+  style: PropTypes.object,
+  className: PropTypes.string
 };
 
 Headline.defaultProps = {
-  children: null
+  children: null,
+  inverted: false,
+  style: {},
+  className: ''
 };
 
 export default Headline;
