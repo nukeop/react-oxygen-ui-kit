@@ -6,13 +6,15 @@ import './styles.scss';
 
 const Input = props => (
   <input
+    style={props.style}
     className={
         classnames(
           'oxygen input',
           { border: props.border },
           { attachLeft: props.attach === 'left' },
           { attachRight: props.attach === 'right' },
-          { attachMid: props.attach === 'mid' }
+          { attachMid: props.attach === 'mid' },
+          props.className
         )
       }
     type="text"
@@ -21,12 +23,16 @@ const Input = props => (
 
 Input.propTypes = {
   border: PropTypes.bool,
-  attach: PropTypes.string
+  attach: PropTypes.string,
+  style: PropTypes.object,
+  className: PropTypes.string
 };
 
 Input.defaultProps = {
   border: false,
-  attach: ''
+  attach: '',
+  style: {},
+  className: ''
 };
 
 export default Input;

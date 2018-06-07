@@ -70,7 +70,7 @@ const ButtonDemo = () => {
             <td><code className="oxygen">attach</code></td>
             <td>string ('left', 'right', or 'mid')</td>
             <td>Allow other elements to be attached to this button
-              from one or both sides..</td>
+              from one or both sides.</td>
           </tr>
         </tbody>
       </table>
