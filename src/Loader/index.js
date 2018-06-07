@@ -18,7 +18,7 @@ Loader.propTypes = {
 };
 
 Loader.defaultProps = {
-  type: 1
+  type: 'loader1'
 };
 
 export default Loader;

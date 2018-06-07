@@ -31,35 +31,42 @@ const ContainerDemo = () => {
 	</tbody>
       </table>
 
-      <span style={{marginBottom: '0.25em'}}>
-	Container is a wrapper that renders its children in a
-	limited	width box.
-      </span>
+      <Row style={{marginBottom: '0.5em'}}>
+	      Container is a wrapper that renders its children in a
+	      limited	width box.
+      </Row>
 
-      <span style={{marginBottom: '1em'}}>Standard container:</span>
-      
-      <Well>
-	<Container>
-	  <Lorem paragraphLowerBound={9} count={3} />
-	</Container>
-      </Well>
+      <Row style={{marginBottom: '1em'}}>Standard container:</Row>
+      <Row style={{margin: '0.5em'}}>
+        <Well>
+	        <Container>
+	          <Lorem paragraphLowerBound={9} count={3} />
+	        </Container>
+        </Well>
+      </Row>
 
       <span style={{marginBottom: '1em'}}>Narrow container:</span>
-      
-      <Well>
-	<Container narrow>
-	  <h2>Header</h2>
-	  <Lorem count={3} />
-	</Container>
-      </Well>
 
-      <span style={{marginBottom: '1em'}}>Justified container:</span>
+      <Row style={{margin: '0.5em'}}>
+        <Well>
+	        <Container narrow>
+	          <h2>Header</h2>
+	          <Lorem count={3} />
+	        </Container>
+        </Well>
+      </Row>
       
-      <Well>
-	<Container narrow style={{textAlign: 'justify'}}>
-	  <Lorem paragraphLowerBound={9} count={3} />
-	</Container>
-      </Well>
+
+      <Row style={{marginBottom: '1em'}}>Justified container:</Row>
+
+      <Row style={{margin: '0.5em'}}>
+        <Well>
+	        <Container narrow style={{textAlign: 'justify'}}>
+	          <Lorem paragraphLowerBound={9} count={3} />
+	        </Container>
+        </Well>
+      </Row>
+      
       
     </Column>
   );

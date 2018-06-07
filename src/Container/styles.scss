@@ -2,10 +2,9 @@
   position: relative;
   margin: 0 auto;
   max-width: 1344px;
-  width: 1344px;
+  width: 100%;
 
   &.narrow {
     max-width: 700px;
-    width: 700px;
   }
 }
