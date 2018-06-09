@@ -32,6 +32,11 @@ const MenuDemo = () => {
             <td>Use big menu variant.</td>
           </tr>
           <tr>
+            <td><code className="oxygen">fluid</code></td>
+            <td>bool</td>
+            <td>Automatically fill the parent component.</td>
+          </tr>
+          <tr>
             <td><code className="oxygen">children</code></td>
             <td>node</td>
             <td>Primary content.</td>
@@ -137,6 +142,13 @@ const MenuDemo = () => {
           <MenuItem button onClick={() => alert('You clicked Atom')}><img alt="Atom" src="http://icons.iconarchive.com/icons/bokehlicia/captiva/128/atom-icon.png"/></MenuItem>
           <MenuSeparator />
           <MenuItem button onClick={() => alert('You clicked Sublime Text')}><img alt="Sublime Text" src="http://icons.iconarchive.com/icons/bokehlicia/pacifica/128/sublime-text-icon.png"/></MenuItem>
+        </Menu>
+      </Row>
+
+      <Row>Menu can take the entire width of its parent component.</Row>
+      <Row>
+        <Menu fluid>
+          <MenuItem>This is a fluid menu</MenuItem>
         </Menu>
       </Row>
       

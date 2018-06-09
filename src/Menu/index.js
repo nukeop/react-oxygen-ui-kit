@@ -12,7 +12,8 @@ const Menu = props => (
         classnames(
           'menu',
           { small: props.small },
-          { big: props.big }
+          { big: props.big },
+          { fluid: props.fluid }
         )
       }
   >
@@ -23,13 +24,15 @@ const Menu = props => (
 Menu.propTypes = {
   children: PropTypes.node,
   small: PropTypes.bool,
-  big: PropTypes.bool
+  big: PropTypes.bool,
+  fluid: PropTypes.bool
 };
 
 Menu.defaultProps = {
   children: null,
   small: false,
-  big: false
+  big: false,
+  fluid: false
 };
 
 export default Menu;
