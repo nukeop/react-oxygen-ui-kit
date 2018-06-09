@@ -15,5 +15,9 @@
     &:hover {
       background: rgba($silver, 0.5);
     }
+
+    img {
+      max-height: 75%;
+    }
   }
 }

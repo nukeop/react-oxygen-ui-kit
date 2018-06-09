@@ -28,6 +28,7 @@ import InputDemo from './inputDemo';
 import LoaderDemo from './loaderDemo';
 import PanelDemo from './panelDemo';
 import RatingDemo from './ratingDemo';
+import MenuDemo from './menuDemo';
 
 const render = Component => {
   ReactDOM.render(
@@ -62,7 +63,7 @@ const sidebarContent = [
   {
     label: 'Views',
     entries: [
-      {title: 'Menu'},
+      {title: 'Menu', element: <MenuDemo />},
       {title: 'Sidebar'}
     ]
   }
@@ -79,7 +80,7 @@ const demo = () => {
           />
         <Column grow={1} style={{padding: '9rem 0 7rem 0'}}>
           <Headline>
-            React UI Kit
+            React Oxygen UI Kit
           </Headline>
           <Paragraph>
             A set of reusable UI components built with React and designed to be easy to integrate with any website.
@@ -92,9 +93,9 @@ const demo = () => {
           <Container>
             <Row grow={1}>
               <Sidebar
-		sticky
-		sections={sidebarContent}
-	      />
+		            sticky
+		            sections={sidebarContent}
+	            />
             </Row>
           </Container>
         </Row>
