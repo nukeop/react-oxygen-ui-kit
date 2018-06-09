@@ -26,6 +26,7 @@ import ButtonDemo from './buttonDemo';
 import HeadlineDemo from './headlineDemo';
 import InputDemo from './inputDemo';
 import LoaderDemo from './loaderDemo';
+import PanelDemo from './panelDemo';
 
 const render = Component => {
   ReactDOM.render(
@@ -53,7 +54,7 @@ const sidebarContent = [
       {title: 'Headline', element: <HeadlineDemo />},
       {title: 'Input', element: <InputDemo />},
       {title: 'Loader', element: <LoaderDemo />},
-      {title: 'Panel'},
+      {title: 'Panel', element: <PanelDemo />},
       {title: 'Rating'}
     ]
   },

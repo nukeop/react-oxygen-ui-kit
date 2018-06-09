@@ -6,3 +6,9 @@
   padding: 1rem;
   color: rgba($midnight, 0.89);
 }
+
+.oxygen.panel.dark > .oxygen.panel-footer {
+  background: $asphalt;
+  color: rgba($clouds, 0.89);
+  border-color: rgba($midnight, 0.89);
+}
