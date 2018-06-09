@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
+import './styles.scss';
+
 const renderStars = score => {
   const result = [];
 
