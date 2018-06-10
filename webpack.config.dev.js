@@ -21,6 +21,7 @@ module.exports = {
     publicPath: 'http://localhost:8080/'
   },
   mode: 'development',
+  devtool: 'source-map',
   module: {
     rules: [
       {

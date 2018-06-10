@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import _ from 'lodash';
+import head from 'lodash.head';
 
 import SidebarEntry from '../SidebarEntry';
 import SidebarLabel from '../SidebarLabel';
@@ -11,8 +11,12 @@ import './styles.scss';
 class Sidebar extends React.Component {
   constructor(props) {
     super(props);
+
+    let defaultElement = head(head(props.sections).entries);
+    defaultElement = defaultElement && defaultElement.element;
+
     this.state = {
-      element: _.head(_.head(props.sections).entries).element
+      element: defaultElement
     };
   }
 
@@ -44,6 +48,7 @@ class Sidebar extends React.Component {
                     {section.label}
                   </SidebarLabel>
                   {
+                    section.entries &&
                     section.entries.map(entry => (
                       <SidebarEntry key={entry.title} onClick={() => this.onEntryClicked(entry)}>
                         {entry.title}
@@ -55,7 +60,7 @@ class Sidebar extends React.Component {
           }
         </div>
         <SidebarContent>
-          {this.state.element}
+        { this.state && this.state.element }
         </SidebarContent>
       </React.Fragment>
     );

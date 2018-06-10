@@ -29,6 +29,7 @@ import LoaderDemo from './loaderDemo';
 import PanelDemo from './panelDemo';
 import RatingDemo from './ratingDemo';
 import MenuDemo from './menuDemo';
+import SidebarDemo from './sidebarDemo';
 
 const render = Component => {
   ReactDOM.render(
@@ -64,7 +65,7 @@ const sidebarContent = [
     label: 'Views',
     entries: [
       {title: 'Menu', element: <MenuDemo />},
-      {title: 'Sidebar'}
+      {title: 'Sidebar', element: <SidebarDemo />}
     ]
   }
 ];
