@@ -60,7 +60,7 @@ class Sidebar extends React.Component {
           }
         </div>
         <SidebarContent>
-        { this.state && this.state.element }
+          { this.state && this.state.element }
         </SidebarContent>
       </React.Fragment>
     );
