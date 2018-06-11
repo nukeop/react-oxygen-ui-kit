@@ -9,9 +9,8 @@ module.exports = {
   output: {
     path: DIST_DIR,
     filename: 'bundle.js',
-    library: 'reactOxygenUiKit',
-    libraryTarget: "commonjs2",
-    libraryExport: "default"
+    library: 'oxygen',
+    libraryTarget: 'commonjs2'
   },
   target: 'web',
   mode: 'production',
