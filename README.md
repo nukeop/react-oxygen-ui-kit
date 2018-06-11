@@ -55,4 +55,4 @@ You can also edit the demo page if you feel that something can be presented bett
 ## About
 ### License
 Copyright © 2018, [nukeop](https://github.com/nukeop).
-Released under the [MIT License](LICENSE).
+Released under the [Affero GPL License](LICENSE).
