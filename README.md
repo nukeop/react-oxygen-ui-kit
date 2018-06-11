@@ -18,11 +18,13 @@ $ npm install react-oxygen-ui-kit
 ## Usage
 ```javascript
 
-import {
+import Oxygen from 'react-oxygen-ui-kit';
+
+const {
   Column,
   Container,
   Row
-} from 'react-oxygen-ui-kit';
+} = Oxygen.default;
 
 const comp = props => {
   return (
@@ -44,3 +46,13 @@ const comp = props => {
 ```
 
 Check the demo for more advanced examples.
+
+## Contributing
+Feel free to add new components or modify existing ones.
+
+You can also edit the demo page if you feel that something can be presented better. Pull requests are always welcome.
+
+## About
+### License
+Copyright © 2018, [nukeop](https://github.com/nukeop).
+Released under the [MIT License](LICENSE).
