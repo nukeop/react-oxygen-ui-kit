@@ -10,7 +10,7 @@ const PanelFooter = props => (
 );
 
 PanelFooter.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node
 };
 
 PanelFooter.defaultProps = {

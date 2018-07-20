@@ -35,10 +35,9 @@ class Sidebar extends React.Component {
     return (
       <React.Fragment>
         <div className={classnames(
-               'oxygen sidebar',
-               { sticky }
-               )
-             }
+          'oxygen sidebar',
+          { sticky }
+        )}
         >
           {
             sections &&

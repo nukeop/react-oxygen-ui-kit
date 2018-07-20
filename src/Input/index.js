@@ -8,15 +8,15 @@ const Input = props => (
   <input
     style={props.style}
     className={
-        classnames(
-          'oxygen input',
-          { border: props.border },
-          { attachLeft: props.attach === 'left' },
-          { attachRight: props.attach === 'right' },
-          { attachMid: props.attach === 'mid' },
-          props.className
-        )
-      }
+      classnames(
+        'oxygen input',
+        { border: props.border },
+        { attachLeft: props.attach === 'left' },
+        { attachRight: props.attach === 'right' },
+        { attachMid: props.attach === 'mid' },
+        props.className
+      )
+    }
     type="text"
   />
 );

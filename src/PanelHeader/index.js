@@ -10,7 +10,7 @@ const PanelHeader = props => (
 );
 
 PanelHeader.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node
 };
 
 PanelHeader.defaultProps = {

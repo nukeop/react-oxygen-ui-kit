@@ -8,10 +8,10 @@ const Headline = props => (
   <div
     style={props.style}
     className={classnames(
-       'oxygen headline',
-       props.className,
-       { inverted: props.inverted }
-     )}
+      'oxygen headline',
+      props.className,
+      { inverted: props.inverted }
+    )}
   >
     {props.children}
   </div>

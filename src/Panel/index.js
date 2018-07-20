@@ -8,13 +8,13 @@ const Panel = props => (
   <div
     style={props.style}
     className={
-        classnames(
-          'oxygen panel',
-          { fluid: props.fluid },
-          { dark: props.dark },
-          props.className
-        )
-      }
+      classnames(
+        'oxygen panel',
+        { fluid: props.fluid },
+        { dark: props.dark },
+        props.className
+      )
+    }
   >
     {props.children}
   </div>

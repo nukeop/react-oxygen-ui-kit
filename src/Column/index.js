@@ -7,9 +7,9 @@ const Column = props => (
   <div
     className="oxygen column"
     style={Object.assign({}, props.style, {
-        flexGrow: props.grow || 0,
-        flexShrink: props.shrink || 0
-      })}
+      flexGrow: props.grow || 0,
+      flexShrink: props.shrink || 0
+    })}
   >
     {props.children}
   </div>

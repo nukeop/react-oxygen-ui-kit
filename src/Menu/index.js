@@ -9,13 +9,13 @@ import './styles.scss';
 const Menu = props => (
   <Panel
     className={
-        classnames(
-          'menu',
-          { small: props.small },
-          { big: props.big },
-          { fluid: props.fluid }
-        )
-      }
+      classnames(
+        'menu',
+        { small: props.small },
+        { big: props.big },
+        { fluid: props.fluid }
+      )
+    }
   >
     {props.children}
   </Panel>

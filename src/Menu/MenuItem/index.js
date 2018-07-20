@@ -11,7 +11,7 @@ const MenuItem = props => (
       'oxygen menu-item',
       { 'item-button': props.button },
       props.className
-      )
+    )
     }
     onClick={props.onClick}
   >

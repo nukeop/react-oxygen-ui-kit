@@ -7,13 +7,13 @@ import './styles.scss';
 const Paragraph = props => (
   <div
     className={
-        classnames(
-          'oxygen paragraph',
-          props.className,
-          { inverted: props.inverted },
-          { fluid: props.fluid }
-        )
-      }
+      classnames(
+        'oxygen paragraph',
+        props.className,
+        { inverted: props.inverted },
+        { fluid: props.fluid }
+      )
+    }
     style={props.style}
   >
     {props.children}

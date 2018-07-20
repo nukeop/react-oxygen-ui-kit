@@ -20,24 +20,24 @@ const renderStars = score => {
 
 const Rating = props => (
   <div className={classnames(
-         'oxygen rating',
-         { 'show-score': props.showScore }
-       )}
+    'oxygen rating',
+    { 'show-score': props.showScore }
+  )}
   >
 
     {
       props.showScore &&
         <div className={classnames(
-               'score',
-               { red: props.red },
-               { orange: props.orange },
-               { yellow: props.yellow },
-               { green: props.green },
-               )}
+          'score',
+          { red: props.red },
+          { orange: props.orange },
+          { yellow: props.yellow },
+          { green: props.green }
+        )}
         >
-            {props.score}
+          {props.score}
         </div>
-      }
+    }
 
     <div className="stars-container">
       {
