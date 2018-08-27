@@ -1,0 +1,28 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  background: #ecf0f1;
+}
+
+body>div {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+
+  width: 100%;
+  height: 100%;
+}
+
+section{
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  flex: 1 1 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3rem 1.5rem;
+}
